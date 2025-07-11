@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+pillow
+
+fastapi
+uvicorn
+tensorflow
+pillow 

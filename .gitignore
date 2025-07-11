@@ -1,0 +1,355 @@
+# =============================================================================
+# SignSpeak - AI Sign Language Translator
+# Comprehensive .gitignore for React + TypeScript + Python ML project
+# =============================================================================
+
+# Node.js Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# =============================================================================
+# Python & AI/ML Specific
+# =============================================================================
+
+# Python Virtual Environments
+venv/
+venv310/
+env/
+ENV/
+.venv/
+.env/
+venv.bak/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyCharm
+.idea/
+
+# =============================================================================
+# AI Models & Training Data
+# =============================================================================
+
+# Large Model Files (>100MB)
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+
+# Training Data & Datasets
+project/Data/asl_dataset/
+project/Data/raw/
+project/Data/processed/
+project/Data/interim/
+project/Data/external/
+datasets/
+data/
+
+# Model Weights & Checkpoints
+weights/
+checkpoints/
+models/
+*.weights
+*.ckpt
+*.index
+*.meta
+*.data-*
+
+# TensorFlow/Keras specific
+*.h5
+*.tf
+saved_model/
+tensorboard_logs/
+logs/
+
+# Training artifacts
+training_history.png
+training_logs/
+model_plots/
+*.png
+*.jpg
+*.jpeg
+!project/public/**/*.png
+!project/public/**/*.jpg
+!project/public/**/*.jpeg
+
+# =============================================================================
+# Kaggle & Data Science
+# =============================================================================
+
+# Kaggle API credentials
+kaggle.json
+.kaggle/
+
+# Data files
+*.csv
+*.tsv
+*.json.gz
+*.parquet
+*.feather
+*.arrow
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# Development & Testing
+# =============================================================================
+
+# Testing
+coverage/
+.nyc_output/
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# Editor & IDE
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# Package Managers
+# =============================================================================
+
+# npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnp.*
+.yarn-integrity
+
+# pnpm
+.pnpm-debug.log*
+.pnpm-store/
+
+# =============================================================================
+# Web Development
+# =============================================================================
+
+# Vite
+dist/
+dist-ssr/
+.vite/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# =============================================================================
+# Cloud & Deployment
+# =============================================================================
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# AWS
+.aws/
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+
+# =============================================================================
+# Security & Credentials
+# =============================================================================
+
+# API Keys & Secrets
+.env
+.env.local
+.env.production
+.env.staging
+secrets.json
+config/secrets.json
+
+# SSH Keys
+*.pem
+*.key
+*.crt
+*.p12
+
+# =============================================================================
+# Specific to SignSpeak Project
+# =============================================================================
+
+# Model conversion outputs
+project/public/Models/tfjs_model/
+project/public/Models/converted/
+
+# Large dataset files
+project/Data/asl_dataset/
+project/Data/raw_images/
+project/Data/processed_images/
+
+# Training outputs
+project/Models/checkpoints/
+project/Models/training_logs/
+project/Models/plots/
+
+# Python notebooks with outputs
+project/scripts/*_output.ipynb
+
+# Temporary model files
+*.tmp.h5
+*.backup.h5
+
+# Performance logs
+performance_logs/
+benchmark_results/
+
+# =============================================================================
+# Keep Important Files
+# =============================================================================
+
+# Keep these important files even if they match patterns above
+!project/public/Models/inference_config.json
+!project/public/Models/model_metadata.json
+!project/Models/inference_config.json
+!project/Models/model_metadata.json
+!README.md
+!LICENSE
+!project/requirements.txt
+!project/package.json
+!project/tsconfig.json
+!project/vite.config.ts
+!project/tailwind.config.js
+!project/postcss.config.js
+!project/eslint.config.js
+
+# Keep example/demo images
+!project/public/examples/
+!project/public/demo/
+!project/src/assets/
+
+# Keep documentation images
+!docs/
+!.github/
