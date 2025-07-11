@@ -46,7 +46,7 @@ A real-time AI-powered sign language to speech translation application built wit
 
 1. **Clone and install dependencies**:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Deveshu04/SignSpeak.git
 cd SignSpeak
 cd project
 npm install
