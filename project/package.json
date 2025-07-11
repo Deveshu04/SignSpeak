@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "train-model": "python3 scripts/train_model.py",
     "setup-dataset": "node scripts/setup-dataset.js",
     "validate-dataset": "python3 scripts/validate_dataset.py",
-    "audit-fix": "npm audit fix"
+    "audit-fix": "npm audit fix",
+    "type-check": "tsc -b"
   },
   "dependencies": {
     "@mediapipe/hands": "^0.4.1675469240",
