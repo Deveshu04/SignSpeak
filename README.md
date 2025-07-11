@@ -365,24 +365,9 @@ Enable debug logging by adding to your `.env`:
 VITE_DEBUG=true
 ```
 
-## 📝 License
+- **Project Repository**: https://github.com/Deveshu04/SignSpeak
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Kaggle**: For providing the ASL dataset and training platform
-- **TensorFlow.js**: For enabling client-side ML inference
-- **React Team**: For the amazing frontend framework
-- **ASL Community**: For making sign language accessible to everyone
-
-## 📧 Contact
-
-- **Project Repository**: [GitHub Repository URL]
-- **Issues**: [GitHub Issues URL]
-- **Discussions**: [GitHub Discussions URL]
-
-## 🔮 Future Enhancements
+## 🔮 Future Enhancements for Code for Bharat
 
 - **Additional sign languages**: ISL, BSL, etc.
 - **Sentence formation**: Word-to-sentence translation
